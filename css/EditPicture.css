@@ -1,0 +1,285 @@
+.AddNewPicture-div {
+    width: 80%;
+    margin: 0 auto;
+}
+.Picture-data{
+    width: 100%;
+    margin: 0 auto;
+}
+.Info-item {
+    width: 100%;
+
+}
+.Details {
+    width: 100%;
+}
+.Main-images {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+}
+.Old-image,
+.New-image {
+    width: 50%;
+    height: 100%;
+}
+.Headline-title,
+.Headline {
+    width: 100%;
+}
+.Headline-title {
+    padding: 1.5vw 0;
+}
+    .Headline p {
+        width: 50%;
+    }
+
+.Old-image img,
+.Old-detail img {
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+    top: 0;
+}
+
+.MainImage {
+    width: 90%;
+    aspect-ratio: 1.5 / 1;
+}
+
+.DetailNumber{
+    font-weight: bold;
+}
+
+.Details-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 1.5vw auto;
+}
+.Delete-detail {
+    width: 30%;
+}
+.Old-new-images {
+    width: 70%;
+}
+.Old-detail,
+.New-detail {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.DetailNumber{
+    margin: 1vw 1vw;
+}
+
+.Detail {
+    height: 90%;
+    aspect-ratio: 1 / 1;
+    margin: 5% auto;
+}
+
+.Option-item input {
+    display: none;
+}
+
+.Option-item label {
+    color: var(--color-feldgrau-light);
+    padding-left: 6vw;
+}
+
+.Option-item input + label {
+    display: block;
+    position: relative;
+    margin-bottom: 1.5vw;
+    cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+    .Option-item input:hover + label:before {
+        /*background: var(--color-vermilion-light);*/
+        background: linear-gradient(45deg, var(--color-grey-light) 0%, var(--color-platinum-dark) 35%, var(--color-greyred-medium) 100%);
+        box-shadow: inset 0 0 0 0.1vw white;
+    }
+}
+
+.Option-item input + label:before {
+    content: "";
+    position: absolute;
+    height: 1.5vw;
+    min-height: 20px;
+    aspect-ratio: 1 / 1;
+    border: 0.15vw solid var(--color-greyred-dark);
+    border-radius: 10vw;
+    left: 0;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    background: var(--color-greyred-light);
+    box-shadow: 0 0 2vw 0.3vw rgba(0,0,0,0.1);
+}
+
+.Option-item input:checked + label:before {
+    height: 1.5vw;
+    min-height: 20px;
+    aspect-ratio: 1 / 1;
+    border-radius: 10vw;
+    border: 0.15vw solid var(--color-greyred-medium);
+    transform: rotate(270deg);
+    background: linear-gradient(45deg, var(--color-grey-light) 0%, var(--color-terracot-dark) 35%, var(--color-greyred-medium) 100%);
+    box-shadow: 0 0 2vw 0.3vw rgba(0,0,0,0.1), inset 0 0 0 0.1vw white;
+}
+
+.Option-item input:checked + .Option-item label {
+    color: var(--color-vermilion-light);
+}
+
+
+input, select {
+    min-height: 40px;
+    height: 2vw;
+    border: 0.1vw solid var(--color-feldgrau-light);
+    box-shadow: 0 0 5vw 0.5vw rgba(0,0,0,0.1);
+    background: var(--color-grey-dark);
+    outline: 0;
+    cursor: pointer;
+    font-family: Arial;
+    width: calc(100% - 1vw);
+    transition: 700ms;
+    padding-block: 0;
+    padding-inline-start: 1vw;
+    margin-top: 0.5vw;
+}
+
+.Image-upload {
+    
+    transition: 900ms;
+    cursor: pointer;
+    position: relative;
+}
+.Preview-image-div {
+    position: relative;
+}
+.Input-image {
+    z-index: 9990;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-inline-start: 0;
+    margin: 0;
+    border: none;
+}
+.Preview-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-inline-start: 0;
+    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Preview-image-div,
+.AddNewImage-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Image-upload:hover {
+    transform: scale(1.08);
+}
+.Preview-image-div {
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(235deg,var(--color-grey-dark),var(--color-greyred-medium));
+}
+.AddNewImage-button {
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(0deg, var(--color-terracot-dark) 0%, var(--color-greyred-medium) 90%, var(--color-grey-light) 100%);
+}
+    .AddNewImage-button svg {
+        height: 70%;
+        color: white;
+    }
+.Preview-image-div svg {
+    height: 70%;
+    color: var(--color-grey-light);
+}
+.Close-image {
+    z-index: 9991;
+    position: relative;
+}
+
+.Detail .Preview-image-div {
+    background: linear-gradient(235deg,var(--color-greyred-light),var(--color-platinum-medium));
+}
+.Detail .AddNewImage-button {
+    background: linear-gradient(0deg, var(--color-platinum-dark) 0%, var(--color-greyred-medium) 90%, var(--color-grey-light) 100%);
+}
+
+select, option {
+    min-height: 40px;
+    appearance: none;
+}
+
+select {
+    width: 100%;
+}
+
+.Style,
+.Width,
+.Year {
+    padding: 0 2.5% 0 0;
+}
+
+.Technic,
+.Date,
+.Height {
+    padding: 0 0 0 2.5%;
+}
+
+.Picture-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .Info-item {
+        margin-bottom: 1.5vw;
+    }
+
+
+input:focus,
+select:focus {
+    box-shadow: inset 0 0 3vw 1vw var(--color-grey-medium);
+}
+
+
+@media(max-width: 749.99px) {
+    .Picture-info {
+            display: block;
+        }
+
+        .Info-item {
+            padding: 0;
+        }
+
+    .Old-new-images {
+        width: 100%;
+    }
+
+    .Details-row{
+        display: block;
+        aspect-ratio: 2 / 1;
+    }
+    .Delete-detail{
+        width: 100%;
+    }
+    .MainImage {
+        width: 80%;
+    }
+}

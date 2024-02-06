@@ -1,0 +1,43 @@
+.Authorization-div {
+    width: 100%;
+}
+
+.Main-section {
+    --color-greyred-light: var(--color-grey-dark);
+    --color-platinum-dark: var(--color-terracot-dark);
+    --color-platinum-light: var(--color-greyred-medium);
+}
+
+.Authorization-data {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.Recover-button:hover {
+    text-decoration: underline;
+}
+
+.Info-item {
+    width: 100%;
+    margin-bottom: 1.5vw;
+}
+
+input, select {
+    min-height: 40px;
+    height: 2vw;
+    border: 0.1vw solid var(--color-feldgrau-light);
+    box-shadow: 0 0 5vw 0.5vw rgba(0,0,0,0.1);
+    background: var(--color-grey-dark);
+    outline: 0;
+    cursor: pointer;
+    font-family: Arial;
+    width: calc(100% - 1vw);
+    transition: 700ms;
+    padding-block: 0;
+    padding-inline-start: 1vw;
+    margin-top: 0.5vw;
+}
+
+    input:focus {
+        box-shadow: inset 0 0 3vw 1vw var(--color-grey-medium);
+    }

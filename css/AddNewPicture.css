@@ -1,0 +1,181 @@
+.AddNewPicture-div {
+    width: 100%;
+}
+.Picture-data{
+    width: 75%;
+    margin: 0 auto;
+}
+.Info-item {
+    width: 100%;
+}
+
+input, select {
+    min-height: 40px;
+    height: 2vw;
+    border: 0.1vw solid var(--color-feldgrau-light);
+    box-shadow: 0 0 5vw 0.5vw rgba(0,0,0,0.1);
+    background: var(--color-grey-dark);
+    outline: 0;
+    cursor: pointer;
+    font-family: Arial;
+    width: calc(100% - 1vw);
+    transition: 700ms;
+    padding-block: 0;
+    padding-inline-start: 1vw;
+    margin-top: 0.5vw;
+}
+
+.Image-upload {
+    margin: 2vw auto;
+    transition: 900ms;
+    cursor: pointer;
+    position: relative;
+}
+.Preview-image-div {
+    position: relative;
+}
+.Input-image {
+    z-index: 9990;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-inline-start: 0;
+    margin: 0;
+    border: none;
+}
+.Preview-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-inline-start: 0;
+    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Preview-image-div,
+.AddNewImage-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Image-upload:hover {
+    transform: scale(1.08);
+}
+.Preview-image-div {
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(235deg,var(--color-grey-dark),var(--color-greyred-medium));
+}
+.AddNewImage-button {
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(0deg, var(--color-terracot-dark) 0%, var(--color-greyred-medium) 90%, var(--color-grey-light) 100%);
+}
+
+.AddNewImage-button svg {
+    height: 70%;
+    color: white;
+}
+
+.Preview-image-div svg {
+    height: 70%;
+    color: var(--color-grey-light);
+}
+
+.Close-image {
+    z-index: 9991;
+    position: relative;
+}
+
+.MainImage {
+    width: 50%;
+    aspect-ratio: 1.5 / 1;
+}
+
+.Detail {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+}
+
+.Details-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+
+.Detail .Preview-image-div {
+    background: linear-gradient(235deg,var(--color-greyred-light),var(--color-platinum-medium));
+}
+
+.Detail .AddNewImage-button {
+    background: linear-gradient(0deg, var(--color-platinum-dark) 0%, var(--color-greyred-medium) 90%, var(--color-grey-light) 100%);
+}
+
+select, option {
+    min-height: 40px;
+    appearance: none;
+}
+
+select {
+    width: 100%;
+}
+
+.Style,
+.Width,
+.Year {
+    padding: 0 2.5% 0 0;
+}
+
+.Technic,
+.Date,
+.Height {
+    padding: 0 0 0 2.5%;
+}
+
+.Picture-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Info-item {
+    margin-bottom: 1.5vw;
+}
+
+input:focus,
+select:focus {
+    box-shadow: inset 0 0 3vw 1vw var(--color-grey-medium);
+}
+
+.Headline-title {
+    width: 100%;
+    padding: 2vw 0;
+}
+
+@media(max-width: 749.99px) {
+
+    .Picture-info {
+        display: block;
+    }
+
+    .Info-item {
+        padding: 0;
+    }
+
+    .Details-row {
+        display: block;
+    }
+
+    .MainImage {
+        width: 80%;
+    }
+    .Detail {
+        width: 50%;
+    }
+}

@@ -1,0 +1,52 @@
+
+.AdminPicture-row {
+    width: 100%;
+    aspect-ratio: 5 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.2vw solid;
+    border-color: var(--color-terracot-medium);
+    padding: 1vw 0;
+    box-shadow: 0 2vw 5vw -4vw grey;
+}
+
+.AdminPicture-row img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Preview-picture {
+    width: 30%;
+}
+
+.Preview-data {
+    width: 70%;
+}
+
+.Button-edit {
+    width: 25%;
+}
+
+.Button-edit a{
+    padding: 5% 0;
+    font-style: italic;
+    text-decoration: underline;
+    transition: 800ms;
+}
+    .Button-edit a:hover {
+        color: var(--color-vermilion-light);
+        transform: scale(1.2);
+    }
+
+@media (max-width: 749.99px) {
+    .AdminPicture-row {
+        display: block;
+        width: 100%;
+    }
+
+    .Button-edit {
+        width: 100%;
+    }
+}  

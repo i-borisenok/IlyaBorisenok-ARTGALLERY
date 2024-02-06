@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Галерея</title>
+
+    <link rel="stylesheet" href="css/Gallery.css">
+    <link rel="stylesheet" href="css/Global.css">
+
+</head>
+
+<body>
+
+    <section class="Main-section">
+        <div class="Main-div">
+
+            <div class="Back-button-div">
+                <a href="index.html" class="Back-button Font-3 Color-feldgrau-light Align-center ">назад</a>
+            </div>
+
+            <div class="Page-head">
+                <div class="Logotip-div">
+                    <svg class="Logotip" role="img" viewBox="0 0 400 400">
+                        <g transform="translate(0.000000,400) scale(0.100000,-0.100000)" stroke="none">
+                            <path fill="currentColor" d="M2440 3854 c-304 -56 -601 -173 -830 -327 -193 -130 -720 -634 -837
+                                -800 -130 -184 -294 -549 -368 -817 -86 -311 -62 -508 78 -637 76 -70 119 -87 222 -87 81 -1 97 2 155 30 124 59 266 201 396 397 128 192 286 523 353 737 38
+                                120 22 120 -28 0 -39 -90 -179 -330 -270 -460 -37 -52 -80 -115 -96 -139 -52 -78 -166 -186 -227 -215 -45 -22 -76 -29 -150 -33 -127 -7 -190 16 -268 96
+                                -61 64 -74 96 -90 226 -22 166 17 292 169 550 96 162 351 429 640 668 248 206 357 271 670 396 310 124 554 147 696 66 94 -54 186 -182 200 -278 3 -24 -3
+                                -96 -14 -167 -18 -112 -27 -142 -91 -285 -69 -156 -147 -299 -217 -400 -19 -27 -77 -113 -128 -190 -52 -77 -115 -165 -140 -195 -25 -30 -79 -96 -120
+                                -146 -40 -50 -116 -136 -167 -191 -319 -341 -328 -352 -451 -568 -97 -169 -116 -217 -167 -410 -68 -260 -78 -447 -28 -520 20 -31 28 -35 66 -35 23 0 64
+                                10 90 22 69 33 225 196 323 340 46 66 110 155 142 197 82 106 281 332 285 322 1 -4 -17 -62 -42 -129 -63 -173 -71 -217 -51 -294 29 -114 82 -166 141 -139
+                                45 20 117 95 170 177 46 71 154 184 176 184 10 0 11 6 -12 -69 -11 -35 -18 -72 -15 -83 8 -24 56 -24 77 0 26 28 168 373 189 456 25 102 -42 94 -188 -22
+                                -24 -18 -75 -80 -114 -137 -123 -181 -206 -235 -259 -168 -89 113 -58 238 99 398 105 107 262 320 497 673 137 207 184 289 220 390 41 112 44 163 11 181
+                                -35 19 -71 -1 -145 -76 -76 -80 -121 -144 -192 -278 -30 -55 -86 -152 -125 -215 -39 -63 -107 -178 -150 -255 -99 -177 -144 -243 -192 -285 -104 -90 -267
+                                -279 -364 -423 -187 -278 -280 -386 -372 -432 -91 -45 -131 -32 -163 55 -20 56 -12 194 17 284 23 74 106 189 263 366 522 586 709 836 901 1202 182 348
+                                314 705 364 991 35 198 -81 418 -253 477 -60 21 -227 35 -286 24z m540 -1761 c-58 -104 -319 -463 -336 -463 -12 0 125 229 229 384 41 61 112 136 129 136 6 0 -5 -26 -22 -57z" />
+                            <path fill="currentColor" d="M3143 815 c-71 -16 -105 -35 -121 -71 -27 -58 -9 -84 60 -84 126 0 218 49 218 116 0 28 -5 36 -26 44 -32 13 -54 12 -131 -5z" />
+                        </g>
+                    </svg>
+                </div>
+
+                <p class="Text-center Font-8 Color-vermilion-light Margin-0">Портретная живопись</p>
+
+                <div class="Filters">
+
+                    <div class="Filter-div">
+                        <label class="Font-3 Color-feldgrau-light" for="Filter">Жанр живописи:</label>
+                        <select class="Font-3 Color-vermilion-light" name="Filter-style" id="Filter-style">
+                            <option class="Font-3 Color-vermilion-light" value="Portrait" selected>Портрет</option>
+                            <option class="Font-3 Color-vermilion-light" value="Landscape">Пейзаж</option>
+                            <option class="Font-3 Color-vermilion-light" value="Composition">Сюжет</option>
+                            <option class="Font-3 Color-vermilion-light" value="Oll">Все</option>
+                        </select>
+                    </div>
+
+                    <div class="Filter-div">
+                        <label class="Font-3 Color-feldgrau-light" for="Filter">Сортировка:</label>
+                        <select class="Font-3 Color-vermilion-light" name="Filter-style" id="Filter-date">
+                            <option class="Font-3 Color-vermilion-light" value="NewPicturesIsFirst" selected>По дате (сначала новые)</option>
+                            <option class="Font-3 Color-vermilion-light" value="OldPicturesIsFirst">По дате (сначала старые)</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="Gallery-row">
+
+                <div class="Picture-div Margin-0">
+                    <a href="#" class="Image-link Align-center">
+                        <img class="Picture" src="images/Default-image.png" />
+                        <figcaption>
+                            <div>
+                                <p class="Font-3 Text-center Color-grey-light">"Название картины номер 1"</p>
+                                <p class="Font-3 Text-center Color-grey-light">холст/масло</p>
+                                <p class="Font-3 Text-center Color-grey-light">2023 год</p>
+                            </div>
+                        </figcaption>
+                    </a>
+                    <p class="Mobile-name Font-4 Text-center Color-vermilion-light">"Название картины номер 1"</p>
+                </div>
+
+                <div class="Picture-div Margin-0">
+                    <a href="#" class="Image-link Align-center">
+                        <img class="Picture" src="images/Default-image.png" />
+                        <figcaption>
+                            <div>
+                                <p class="Font-3 Text-center Color-grey-light">"Название картины номер 1"</p>
+                                <p class="Font-3 Text-center Color-grey-light">холст/масло</p>
+                                <p class="Font-3 Text-center Color-grey-light">2023 год</p>
+                            </div>
+                        </figcaption>
+                    </a>
+                    <p class="Mobile-name Font-4 Text-center Color-vermilion-light">"Название картины номер 1"</p>
+                </div>
+
+                <div class="Picture-div Margin-0">
+                    <a href="#" class="Image-link Align-center">
+                        <img class="Picture" src="images/Default-image.png" />
+                        <figcaption>
+                            <div>
+                                <p class="Font-3 Text-center Color-grey-light">"Название картины номер 1"</p>
+                                <p class="Font-3 Text-center Color-grey-light">холст/масло</p>
+                                <p class="Font-3 Text-center Color-grey-light">2023 год</p>
+                            </div>
+                        </figcaption>
+                    </a>
+                    <p class="Mobile-name Font-4 Text-center Color-vermilion-light">"Название картины номер 1"</p>
+                </div>
+
+            </div>
+
+            <div class="Gallery-row">
+
+                <div class="Picture-div Margin-0">
+                    <a href="#" class="Image-link Align-center">
+                        <img class="Picture" src="images/Default-image.png" />
+                        <figcaption>
+                            <div>
+                                <p class="Font-3 Text-center Color-grey-light">"Название картины номер 1"</p>
+                                <p class="Font-3 Text-center Color-grey-light">холст/масло</p>
+                                <p class="Font-3 Text-center Color-grey-light">2023 год</p>
+                            </div>
+                        </figcaption>
+                    </a>
+                    <p class="Mobile-name Font-4 Text-center Color-vermilion-light">"Название картины номер 1"</p>
+                </div>
+
+                <div class="Picture-div Margin-0">
+                    <a href="#" class="Image-link Align-center">
+                        <img class="Picture" src="images/Default-image.png" />
+                        <figcaption>
+                            <div>
+                                <p class="Font-3 Text-center Color-grey-light">"Название картины номер 1"</p>
+                                <p class="Font-3 Text-center Color-grey-light">холст/масло</p>
+                                <p class="Font-3 Text-center Color-grey-light">2023 год</p>
+                            </div>
+                        </figcaption>
+                    </a>
+                    <p class="Mobile-name Font-4 Text-center Color-vermilion-light">"Название картины номер 1"</p>
+                </div>
+
+                <div class="Picture-div Margin-0">
+                    <a href="#" class="Image-link Align-center">
+                        <img class="Picture" src="images/Default-image.png" />
+                        <figcaption>
+                            <div>
+                                <p class="Font-3 Text-center Color-grey-light">"Название картины номер 1"</p>
+                                <p class="Font-3 Text-center Color-grey-light">холст/масло</p>
+                                <p class="Font-3 Text-center Color-grey-light">2023 год</p>
+                            </div>
+                        </figcaption>
+                    </a>
+                    <p class="Mobile-name Font-4 Text-center Color-vermilion-light">"Название картины номер 1"</p>
+                </div>
+
+            </div>
+
+            <div class="Gallery-row">
+
+                <div class="Picture-div Margin-0">
+                    <a href="#" class="Image-link Align-center">
+                        <img class="Picture" src="images/Default-image.png" />
+                        <figcaption>
+                            <div>
+                                <p class="Font-3 Text-center Color-grey-light">"Название картины номер 1"</p>
+                                <p class="Font-3 Text-center Color-grey-light">холст/масло</p>
+                                <p class="Font-3 Text-center Color-grey-light">2023 год</p>
+                            </div>
+                        </figcaption>
+                    </a>
+                    <p class="Mobile-name Font-4 Text-center Color-vermilion-light">"Название картины номер 1"</p>
+                </div>
+
+                <div class="Picture-div Margin-0">
+                    <a href="#" class="Image-link Align-center">
+                        <img class="Picture" src="images/Default-image.png" />
+                        <figcaption>
+                            <div>
+                                <p class="Font-3 Text-center Color-grey-light">"Название картины номер 1"</p>
+                                <p class="Font-3 Text-center Color-grey-light">холст/масло</p>
+                                <p class="Font-3 Text-center Color-grey-light">2023 год</p>
+                            </div>
+                        </figcaption>
+                    </a>
+                    <p class="Mobile-name Font-4 Text-center Color-vermilion-light">"Название картины номер 1"</p>
+                </div>
+
+                <div class="Picture-div Margin-0">
+                    <a href="#" class="Image-link Align-center">
+                        <img class="Picture" src="images/Default-image.png" />
+                        <figcaption>
+                            <div>
+                                <p class="Font-3 Text-center Color-grey-light">"Название картины номер 1"</p>
+                                <p class="Font-3 Text-center Color-grey-light">холст/масло</p>
+                                <p class="Font-3 Text-center Color-grey-light">2023 год</p>
+                            </div>
+                        </figcaption>
+                    </a>
+                    <p class="Mobile-name Font-4 Text-center Color-vermilion-light">"Название картины номер 1"</p>
+                </div>
+
+            </div>
+            <!--<div class="Picture-div ">
+        <div class="Picture-image Align-center">
+            <img class="Picture" src="images/Default-image.png" />
+        </div>
+        <p class="Picture-name Font-3 Text-center Color-vermilion-light">Название картины номер 9"</p>
+    </div>-->
+
+
+
+            <div class="Pages-div">
+
+                <div class="Pages">
+                    <div>
+                        <a href="#" class="Page-button Font-3">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0,500) scale(0.1,-0.1)"
+                                   fill="currentColor" stroke="none">
+                                    <path d="M2745 3851 c-27 -13 -216 -196 -586 -567 -640 -643 -604 -596 -604
+                                        -789 0 -191 -34 -146 599 -783 298 -299 557 -552 576 -562 54 -27 96 -33 152
+                                        -19 88 20 158 109 158 199 0 83 0 83 -490 575 -257 259 -475 484 -484 502 -21
+                                        41 -21 135 0 176 9 18 222 239 475 492 471 474 498 505 499 580 1 153 -159
+                                        259 -295 196z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#" class="Page-button Font-3">1</a>
+                        <a href="#" class="Page-button Font-3">...</a>
+                    </div>
+                    <div>
+                        <a href="#" class="Page-button Font-3">4</a>
+                        <a href="#" class="Page-button Font-3">5</a>
+                        <a href="#" class="Page-button Font-3 Active-page">6</a>
+                        <a href="#" class="Page-button Font-3">7</a>
+                        <a href="#" class="Page-button Font-3">8</a>
+                    </div>
+                    <div>
+                        <a href="#" class="Page-button Font-3">...</a>
+                        <a href="#" class="Page-button Font-3">11</a>
+                        <a href="#" class="Page-button Font-3">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0,500) scale(0.1,-0.1)" fill="currentColor" stroke="none">
+                                    <path d="M2063 3844 c-76 -45 -114 -141 -92 -231 11 -45 38 -75 479 -518 257
+                                        -258 476 -486 486 -505 23 -45 23 -133 0 -180 -10 -19 -229 -246 -486 -505
+                                        -460 -462 -468 -471 -479 -522 -20 -99 22 -188 113 -235 58 -30 149 -22 205
+                                        16 23 16 279 270 570 565 400 406 535 549 555 588 36 73 51 174 37 254 -23
+                                        134 -19 129 -595 708 -292 293 -551 546 -575 562 -62 40 -155 41 -218 3z" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="Pages-count Align-center">
+                    <p class="Font-3 Color-platinum-dark">Показано:&nbsp;&nbsp;&nbsp;<span class="Color-vermilion-light">33 - 42</span>&nbsp;&nbsp;&nbsp;из&nbsp;&nbsp;&nbsp;<span class="Color-vermilion-light">108</span></p>
+                </div>
+
+            </div>
+
+
+            <div class="Order-button-div Align-center">
+                <a class="Order-button Font-3 Align-center">ЗАКАЗАТЬ КАРТИНУ</a>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

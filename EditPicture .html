@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Добавить картину</title>
+
+    <link rel="stylesheet" href="css/EditPicture.css">
+    <link rel="stylesheet" href="css/Global.css">
+
+</head>
+
+<body>
+
+    <section class="Main-section">
+        <div class="Main-div">
+
+            <div class="Back-button-div">
+                <a href="Gallery.html" class="Back-button Font-3 Color-feldgrau-light Align-center ">назад</a>
+            </div>
+
+            <div class="Page-head">
+                <div class="Logotip-div">
+                    <svg class="Logotip" role="img" viewBox="0 0 400 400">
+                        <g transform="translate(0,400) scale(0.1,-0.1)" stroke="none">
+                            <path fill="currentColor" d="M2440 3854 c-304 -56 -601 -173 -830 -327 -193 -130 -720 -634 -837
+                                -800 -130 -184 -294 -549 -368 -817 -86 -311 -62 -508 78 -637 76 -70 119 -87 222 -87 81 -1 97 2 155 30 124 59 266 201 396 397 128 192 286 523 353 737 38
+                                120 22 120 -28 0 -39 -90 -179 -330 -270 -460 -37 -52 -80 -115 -96 -139 -52 -78 -166 -186 -227 -215 -45 -22 -76 -29 -150 -33 -127 -7 -190 16 -268 96
+                                -61 64 -74 96 -90 226 -22 166 17 292 169 550 96 162 351 429 640 668 248 206 357 271 670 396 310 124 554 147 696 66 94 -54 186 -182 200 -278 3 -24 -3
+                                -96 -14 -167 -18 -112 -27 -142 -91 -285 -69 -156 -147 -299 -217 -400 -19 -27 -77 -113 -128 -190 -52 -77 -115 -165 -140 -195 -25 -30 -79 -96 -120
+                                -146 -40 -50 -116 -136 -167 -191 -319 -341 -328 -352 -451 -568 -97 -169 -116 -217 -167 -410 -68 -260 -78 -447 -28 -520 20 -31 28 -35 66 -35 23 0 64
+                                10 90 22 69 33 225 196 323 340 46 66 110 155 142 197 82 106 281 332 285 322 1 -4 -17 -62 -42 -129 -63 -173 -71 -217 -51 -294 29 -114 82 -166 141 -139
+                                45 20 117 95 170 177 46 71 154 184 176 184 10 0 11 6 -12 -69 -11 -35 -18 -72 -15 -83 8 -24 56 -24 77 0 26 28 168 373 189 456 25 102 -42 94 -188 -22
+                                -24 -18 -75 -80 -114 -137 -123 -181 -206 -235 -259 -168 -89 113 -58 238 99 398 105 107 262 320 497 673 137 207 184 289 220 390 41 112 44 163 11 181
+                                -35 19 -71 -1 -145 -76 -76 -80 -121 -144 -192 -278 -30 -55 -86 -152 -125 -215 -39 -63 -107 -178 -150 -255 -99 -177 -144 -243 -192 -285 -104 -90 -267
+                                -279 -364 -423 -187 -278 -280 -386 -372 -432 -91 -45 -131 -32 -163 55 -20 56 -12 194 17 284 23 74 106 189 263 366 522 586 709 836 901 1202 182 348
+                                314 705 364 991 35 198 -81 418 -253 477 -60 21 -227 35 -286 24z m540 -1761 c-58 -104 -319 -463 -336 -463 -12 0 125 229 229 384 41 61 112 136 129 136 6 0 -5 -26 -22 -57z" />
+                            <path fill="currentColor" d="M3143 815 c-71 -16 -105 -35 -121 -71 -27 -58 -9 -84 60 -84 126 0 218 49 218 116 0 28 -5 36 -26 44 -32 13 -54 12 -131 -5z" />
+                        </g>
+                    </svg>
+                </div>
+
+                <p class="Text-center Font-8 Color-vermilion-light Margin-0">Добавить новую картину</p>
+
+            </div>
+
+            <form class="Picture-data">
+
+                <div class="AddNewPicture-div">
+
+                    <div class="Info-item Name">
+                        <label class="Font-2 Color-feldgrau-light" for="pictureName">Новое название картины:</label>
+                        <input class="Font-2 Color-vermilion-light" type="text" id="pictureName" name="pictureName" required="required" placeholder="Старое название картины" />
+                    </div>
+
+                    <div class="Picture-info">
+
+                        <div class="Info-item Style">
+                            <label class="Font-2 Color-feldgrau-light" for="Style">Жанр живописи:</label>
+                            <select class="Font-2 Color-vermilion-light" name="Style" id="Style">
+                                <option class="Font-2 Color-vermilion-light" value="Portrait" selected>Портрет</option>
+                                <option class="Font-2 Color-vermilion-light" value="Landscape">Пейзаж</option>
+                                <option class="Font-2 Color-vermilion-light" value="Composition">Сюжет</option>
+                                <option class="Font-2 Color-vermilion-light" value="Oll">Все</option>
+                            </select>
+                        </div>
+
+                        <div class="Info-item Technic">
+                            <label class="Font-2 Color-feldgrau-light" for="Technic">Техника живописи:</label>
+                            <select class="Font-2 Color-vermilion-light" name="Technic" id="Technic">
+                                <option class="Font-2 Color-vermilion-light" value="Canvas" selected>холст/масло</option>
+                                <option class="Font-2 Color-vermilion-light" value="Paper">бумага/графит</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="Picture-info">
+
+                        <div class="Info-item Year">
+                            <label class="Font-2 Color-feldgrau-light" for="Year">Год создания:</label>
+                            <input class="Font-2 Color-vermilion-light" type="number" id="Year" name="Year" min="2000" max="2100" required="required" placeholder="Год создания" />
+                        </div>
+
+                        <div class="Info-item Date">
+                            <label class="Font-2 Color-feldgrau-light" for="Date">Дата релиза:</label>
+                            <input class="Font-2 Color-vermilion-light" type="date" value="" id="Date" name="Date" required="required" />
+                        </div>
+
+                    </div>
+
+                    <div class="Picture-info">
+                        <div class="Info-item Width">
+                            <label class="Font-2 Color-feldgrau-light" for="Width">Длина холста:</label>
+                            <input class="Font-2 Color-vermilion-light" type="number" id="Width" name="Width" min="10" max="500" required="required" placeholder="Длина холста" />
+                        </div>
+
+                        <div class="Info-item Height">
+                            <label class="Font-2 Color-feldgrau-light" for="Height">Высота холста:</label>
+                            <input class="Font-2 Color-vermilion-light" type="number" id="Height" name="Height" min="10" max="500" required="required" placeholder="Высота холста" />
+                        </div>
+                    </div>
+
+                    <p class="Headline-title Text-center Font-4 Color-vermilion-light Margin-0">Главное изображение:</p>
+
+                    <div class="Headline Align-center">
+                        <p class="Text-center Font-3 Color-vermilion-light Margin-0">Старое изображение:</p>
+
+                        <p class="Text-center Font-3 Color-vermilion-light Margin-0">Новое изображение:</p>
+                    </div>
+
+                    <div class="Main-images Align-center">
+
+                        <div class="Old-image Align-center">
+                            <img src="images/Default-image.png" />
+                        </div>
+
+                        <div class="New-image Align-center">
+                            <div class="Image-upload MainImage" id="image_1">
+
+                                <a onclick="removeImage('image_1');" class="x Close-image Font-1">✖</a>
+
+                                <input class="Input-image" type="file" accept="image/*" id="mainImage" name="mainImage" />
+                                <div class="Preview-image-div" id="Preview">
+
+                                    <div class="Preview-image" id="Preview-image"></div>
+
+                                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                        <path d="M11.5 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"></path>
+                                        <path d="M1 1v14h14V1zm1 1h12v10H2z"></path>
+                                        <path d="M6 5.5L3 11h8L8.5 6.5 7.5 8z"></path>
+                                    </svg>
+                                </div>
+                                <div class="AddNewImage-button">
+                                    <svg id="ChangeImage-button" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163
+                                            16-16s-7.163-16-16-16zM16 30.032c-7.72 0-14-6.312-14-14.032s6.28-14
+                                            14-14 14 6.28 14 14-6.28 14.032-14 14.032zM23 15h-6v-6c0-0.552-0.448-1-1-1s-1
+                                            0.448-1 1v6h-6c-0.552 0-1 0.448-1 1s0.448 1 1 1h6v6c0 0.552 0.448 1 1 1s1-0.448
+                                            1-1v-6h6c0.552 0 1-0.448 1-1s-0.448-1-1-1z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <p class="Headline-title Text-center Font-4 Color-vermilion-light Margin-0">Изображения деталей картины:</p>
+
+                </div>
+
+                    <div class="Details">
+
+                        <div class="Details-row">
+
+                            <div class="Delete-detail">
+                                <p class="DetailNumber Text-center Font-3 Color-feldgrau-light Margin-0">Номер детали:</p>
+                                <p class="DetailNumber Text-center Font-4 Color-vermilion-light">1</p>
+                                <div class="Option-item Align-center Align-center">
+                                    <input type="checkbox" id="detail_1" name="detail_1" />
+                                    <label class="Font-3" for="detail_1">Удалить изображение</label>
+                                </div>
+                            </div>
+
+                            <div class="Old-new-images Align-center">
+
+                                <div class="Old-detail Align-center">
+                                    <img src="images/Default-image.png" />
+                                </div>
+
+                                <div class="New-detail Align-center">
+                                    <div class="Image-upload Detail" id="image_2">
+
+                                        <a onclick="removeImage('image_2');" class="x Close-image Font-1">✖</a>
+
+                                        <input class="Input-image" type="file" accept="image/*" name="image_2" />
+                                        <div class="Preview-image-div" id="Preview">
+
+                                            <div class="Preview-image" id="Preview-image"></div>
+
+                                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                                <path d="M11.5 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"></path>
+                                                <path d="M1 1v14h14V1zm1 1h12v10H2z"></path>
+                                                <path d="M6 5.5L3 11h8L8.5 6.5 7.5 8z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="AddNewImage-button">
+                                            <svg id="ChangeImage-button" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163
+                                                    16-16s-7.163-16-16-16zM16 30.032c-7.72 0-14-6.312-14-14.032s6.28-14
+                                                    14-14 14 6.28 14 14-6.28 14.032-14 14.032zM23 15h-6v-6c0-0.552-0.448-1-1-1s-1
+                                                    0.448-1 1v6h-6c-0.552 0-1 0.448-1 1s0.448 1 1 1h6v6c0 0.552 0.448 1 1 1s1-0.448
+                                                    1-1v-6h6c0.552 0 1-0.448 1-1s-0.448-1-1-1z">
+                                                </path>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <input id="sub" type="submit" class="Hidden" />
+
+                    <div class="Order-button-div Align-center">
+                        <a onclick="document.getElementById('sub').click();" class="Order-button Font-3 Align-center">ОПУБЛИКОВАТЬ КАРТИНУ</a>
+                    </div>
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="js/AddNewPicture.js"></script>
+
+</body>
+</html>

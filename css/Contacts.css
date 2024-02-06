@@ -1,0 +1,61 @@
+.ContactsPage-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1vw 0 3vw 0;
+}
+
+.Contacts-content {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.Contacts-item {
+    display: flex;
+}
+
+.ContactsPage-div .QR-code {
+    width: 30%;
+    min-width: 200px;
+    aspect-ratio: 1 / 1;
+    padding: 5% 5% 5% 5%;
+    margin: 0 auto;
+}
+.ContactsPage-div .QR-code svg {
+    width: 100%;
+    height: 100%;
+    color: var(--color-vermilion-light);
+}
+
+.Social-resource{
+    width: 30%;
+}
+.Social-contact {
+    width: 70%;
+}
+
+.Contacts-content p,
+.Social-contact a {
+    display: flex;
+    margin-block-start: 0.8vw;
+    margin-block-end: 0.8vw;
+}
+
+@media (max-width: 999.99px) {
+    .ContactsPage-div {
+        display: block;
+    }
+
+    .Contacts-item {
+        display: block;
+        padding-top: 2vw;
+    }
+    .Contacts-content {
+        width: 90%;
+    }
+    .Social-resource,
+    .Social-contact {
+        width: 100%;
+    }
+}
